@@ -47,11 +47,13 @@
 </html>
 
 <script>
-    
+
     OneATwoB.makeAnswer();
+    var table = document.getElementById("table");
 
     function submit() {
         OneATwoB.judgeAnswer(document.getElementById("inputAnswer").value)
+        table.innerHTML = OneATwoB.record
     }
 
 </script>

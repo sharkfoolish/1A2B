@@ -28,5 +28,10 @@ const  OneATwoB = {
         if (a == 4) {
             alert('恭喜您用了' + this.number + '次，答對了最終的答案' + inputAnswer);
         }
+        this.rederRecord(inputAnswer, a+'A'+b+'B');
+    },
+
+    rederRecord : function(inputAnswer, result){
+        this.record += '<tr><th scope="row">'+ this.number + '</th><td>' + new Date().toLocaleDateString() + ' ' +new Date().toLocaleTimeString() + '</td><td>'+ inputAnswer +'</td><td>'+ result +'</td></tr>';
     }
 };
