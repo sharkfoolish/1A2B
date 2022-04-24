@@ -62,4 +62,13 @@
         return typeof n == 'number' && n % 1 == 0;
     }
 
+    function isRepeat(string){
+        for (var i = 0; i < string.length; i+=1 ) {
+            if (string.indexOf(string[i]) != string.lastIndexOf(string[i])){
+                return true;
+            }
+        };
+        return false;
+    }
+
 </script>

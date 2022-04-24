@@ -14,7 +14,7 @@ const  OneATwoB = {
     },
     
     judgeAnswer : function(inputAnswer){
-        if(inputAnswer.length!=4 || !(isInt(inputAnswer-0))) {
+        if(inputAnswer.length!=4 || !(isInt(inputAnswer-0)) || isRepeat(inputAnswer)) {
             error.innerHTML = '<div class="alert alert-danger" role="alert">輸入錯誤，只能輸入每位不能重複的四位數</div>';
         } else {
             var a = 0;
@@ -38,4 +38,5 @@ const  OneATwoB = {
     rederRecord : function(inputAnswer, result){
         this.record += '<tr><th scope="row">'+ this.number + '</th><td>' + new Date().toLocaleDateString() + ' ' +new Date().toLocaleTimeString() + '</td><td>'+ inputAnswer +'</td><td>'+ result +'</td></tr>';
     }
+
 };
