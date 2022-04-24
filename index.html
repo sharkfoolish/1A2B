@@ -22,6 +22,9 @@
                 </div>
                 <div class="mb-3" id="error"></div>
                 <div class="mb-3">
+                    <button type="button" class="btn btn-danger" onclick="refresh()" data-bs-toggle="tooltip" data-bs-placement="bottom" title="將會喪失目前進度">
+                        重新出題
+                    </button>
                     <button class="btn btn-success" type="button" onclick="submit()">送出</button>
                 </div>
             </div>
@@ -69,6 +72,11 @@
             }
         };
         return false;
+    }
+
+    function refresh(){
+        window.location.href=window.location.href; 
+        window.location.reload; 
     }
 
 </script>
