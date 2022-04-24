@@ -50,10 +50,16 @@
 
     OneATwoB.makeAnswer();
     var table = document.getElementById("table");
+    var error = document.getElementById("error");
 
     function submit() {
+        error.innerHTML = '';
         OneATwoB.judgeAnswer(document.getElementById("inputAnswer").value)
         table.innerHTML = OneATwoB.record
+    }
+
+    function isInt(n) {
+        return typeof n == 'number' && n % 1 == 0;
     }
 
 </script>
