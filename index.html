@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1A2B</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body style="background: #28374b;" class="text-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h1 class="mt-5 display-4">1A2B</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-2">
+            <div class="col-lg-6">
+                <div class="mb-3">
+                    <label for="inputAnswerLabel" class="form-label" id='inputAnswerLabel'>UserAnswer</label>
+                    <input type="text" class="form-control" id="inputAnswer" placeholder="請輸入答案">
+                </div>
+                <div class="mb-3" id="error"></div>
+                <div class="mb-3">
+                    <button class="btn btn-success" type="button">送出</button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <table class="table text-white">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">時間</th>
+                        <th scope="col">數字</th>
+                        <th scope="col">結果</th>
+                      </tr>
+                    </thead>
+                    <tbody id="table">
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
